@@ -64,3 +64,23 @@ val = Math.floor(Math.random() * 20 +1); //whole number between 0-20
 
 console.log(val); */
 
+
+
+//class decoration, class expression
+const snickers = new Dog('Snickers', 'King Charles');
+const sunny = new Dog('Sunny', 'Golden Doodie');
+
+const Dog = class{
+    //constructor is a need to build a class
+    constructor(name, breed){
+        this.name = name;
+        this.breed = breed;
+    }//no comma
+    bark(){
+        console.log(`My name is ${this.name}`)
+    }
+    cunddle(){
+        console.log(`I love your owner`);
+    }
+}
+
